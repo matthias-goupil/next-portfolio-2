@@ -6,8 +6,8 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #251C31;
+  --foreground: #ededed;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,3 +22,12 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* h1 {
+  @apply text-2xl font-bold
+}
+
+h2 {
+  @apply text-xl
+} */

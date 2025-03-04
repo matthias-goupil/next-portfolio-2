@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Button from "@/components/ui/button";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,9 +26,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased m-auto w-[75%] min-w-2xl`}
       >
+        <header className="w-full h-28 flex justify-between items-center">
+          <nav>
+            <ul className="flex gap-8 items-center">
+              <li>A propos de moi</li>
+              <li>Expériences</li>
+              <li>Projets</li>
+            </ul>
+          </nav>
+
+          <Button href="/">Contactez-moi</Button>
+        </header>
         {children}
+        <footer></footer>
       </body>
     </html>
   );
